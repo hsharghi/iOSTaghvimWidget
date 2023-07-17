@@ -13,6 +13,14 @@
 		0F17EEC92A65E17000F29DA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F17EEC82A65E17000F29DA1 /* Preview Assets.xcassets */; };
 		0F17EED42A65E17000F29DA1 /* TaghvimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F17EED32A65E17000F29DA1 /* TaghvimTests.swift */; };
 		0F17EEDF2A65E17000F29DA1 /* TaghvimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F17EEDE2A65E17000F29DA1 /* TaghvimUITests.swift */; };
+		0F17EEF62A65E19A00F29DA1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F17EEF52A65E19A00F29DA1 /* WidgetKit.framework */; };
+		0F17EEF82A65E19A00F29DA1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F17EEF72A65E19A00F29DA1 /* SwiftUI.framework */; };
+		0F17EEFB2A65E19A00F29DA1 /* TaghvimWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F17EEFA2A65E19A00F29DA1 /* TaghvimWidget.swift */; };
+		0F17EEFE2A65E19D00F29DA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F17EEFD2A65E19D00F29DA1 /* Assets.xcassets */; };
+		0F17EF002A65E19D00F29DA1 /* TaghvimWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0F17EEFC2A65E19A00F29DA1 /* TaghvimWidget.intentdefinition */; };
+		0F17EF012A65E19D00F29DA1 /* TaghvimWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0F17EEFC2A65E19A00F29DA1 /* TaghvimWidget.intentdefinition */; };
+		0F17EF042A65E19D00F29DA1 /* TaghvimWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0F17EEF32A65E19A00F29DA1 /* TaghvimWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0F17EF0E2A65E25500F29DA1 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F17EF0D2A65E25500F29DA1 /* DateConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +38,28 @@
 			remoteGlobalIDString = 0F17EEBD2A65E16C00F29DA1;
 			remoteInfo = Taghvim;
 		};
+		0F17EF022A65E19D00F29DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F17EEB62A65E16C00F29DA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F17EEF22A65E19A00F29DA1;
+			remoteInfo = TaghvimWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0F17EF082A65E19D00F29DA1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0F17EF042A65E19D00F29DA1 /* TaghvimWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F17EEBE2A65E16C00F29DA1 /* Taghvim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taghvim.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +74,14 @@
 		0F17EEDA2A65E17000F29DA1 /* TaghvimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaghvimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F17EEDE2A65E17000F29DA1 /* TaghvimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaghvimUITests.swift; sourceTree = "<group>"; };
 		0F17EEE02A65E17000F29DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F17EEF32A65E19A00F29DA1 /* TaghvimWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TaghvimWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F17EEF52A65E19A00F29DA1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0F17EEF72A65E19A00F29DA1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0F17EEFA2A65E19A00F29DA1 /* TaghvimWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaghvimWidget.swift; sourceTree = "<group>"; };
+		0F17EEFC2A65E19A00F29DA1 /* TaghvimWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = TaghvimWidget.intentdefinition; sourceTree = "<group>"; };
+		0F17EEFD2A65E19D00F29DA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F17EEFF2A65E19D00F29DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F17EF0D2A65E25500F29DA1 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +106,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F17EEF02A65E19A00F29DA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F17EEF82A65E19A00F29DA1 /* SwiftUI.framework in Frameworks */,
+				0F17EEF62A65E19A00F29DA1 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +124,8 @@
 				0F17EEC02A65E16C00F29DA1 /* Taghvim */,
 				0F17EED22A65E17000F29DA1 /* TaghvimTests */,
 				0F17EEDD2A65E17000F29DA1 /* TaghvimUITests */,
+				0F17EEF92A65E19A00F29DA1 /* TaghvimWidget */,
+				0F17EEF42A65E19A00F29DA1 /* Frameworks */,
 				0F17EEBF2A65E16C00F29DA1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +136,7 @@
 				0F17EEBE2A65E16C00F29DA1 /* Taghvim.app */,
 				0F17EECF2A65E17000F29DA1 /* TaghvimTests.xctest */,
 				0F17EEDA2A65E17000F29DA1 /* TaghvimUITests.xctest */,
+				0F17EEF32A65E19A00F29DA1 /* TaghvimWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +179,27 @@
 			path = TaghvimUITests;
 			sourceTree = "<group>";
 		};
+		0F17EEF42A65E19A00F29DA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F17EEF52A65E19A00F29DA1 /* WidgetKit.framework */,
+				0F17EEF72A65E19A00F29DA1 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F17EEF92A65E19A00F29DA1 /* TaghvimWidget */ = {
+			isa = PBXGroup;
+			children = (
+				0F17EEFA2A65E19A00F29DA1 /* TaghvimWidget.swift */,
+				0F17EF0D2A65E25500F29DA1 /* DateConverter.swift */,
+				0F17EEFC2A65E19A00F29DA1 /* TaghvimWidget.intentdefinition */,
+				0F17EEFD2A65E19D00F29DA1 /* Assets.xcassets */,
+				0F17EEFF2A65E19D00F29DA1 /* Info.plist */,
+			);
+			path = TaghvimWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,10 +210,12 @@
 				0F17EEBA2A65E16C00F29DA1 /* Sources */,
 				0F17EEBB2A65E16C00F29DA1 /* Frameworks */,
 				0F17EEBC2A65E16C00F29DA1 /* Resources */,
+				0F17EF082A65E19D00F29DA1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0F17EF032A65E19D00F29DA1 /* PBXTargetDependency */,
 			);
 			name = Taghvim;
 			productName = Taghvim;
@@ -186,6 +258,23 @@
 			productReference = 0F17EEDA2A65E17000F29DA1 /* TaghvimUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0F17EEF22A65E19A00F29DA1 /* TaghvimWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F17EF052A65E19D00F29DA1 /* Build configuration list for PBXNativeTarget "TaghvimWidgetExtension" */;
+			buildPhases = (
+				0F17EEEF2A65E19A00F29DA1 /* Sources */,
+				0F17EEF02A65E19A00F29DA1 /* Frameworks */,
+				0F17EEF12A65E19A00F29DA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaghvimWidgetExtension;
+			productName = TaghvimWidgetExtension;
+			productReference = 0F17EEF32A65E19A00F29DA1 /* TaghvimWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +295,9 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 0F17EEBD2A65E16C00F29DA1;
 					};
+					0F17EEF22A65E19A00F29DA1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = 0F17EEB92A65E16C00F29DA1 /* Build configuration list for PBXProject "Taghvim" */;
@@ -224,6 +316,7 @@
 				0F17EEBD2A65E16C00F29DA1 /* Taghvim */,
 				0F17EECE2A65E17000F29DA1 /* TaghvimTests */,
 				0F17EED92A65E17000F29DA1 /* TaghvimUITests */,
+				0F17EEF22A65E19A00F29DA1 /* TaghvimWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +345,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F17EEF12A65E19A00F29DA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F17EEFE2A65E19D00F29DA1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F17EEC42A65E16C00F29DA1 /* ContentView.swift in Sources */,
+				0F17EF012A65E19D00F29DA1 /* TaghvimWidget.intentdefinition in Sources */,
 				0F17EEC22A65E16C00F29DA1 /* TaghvimApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +382,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F17EEEF2A65E19A00F29DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F17EEFB2A65E19A00F29DA1 /* TaghvimWidget.swift in Sources */,
+				0F17EF0E2A65E25500F29DA1 /* DateConverter.swift in Sources */,
+				0F17EF002A65E19D00F29DA1 /* TaghvimWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +404,11 @@
 			isa = PBXTargetDependency;
 			target = 0F17EEBD2A65E16C00F29DA1 /* Taghvim */;
 			targetProxy = 0F17EEDB2A65E17000F29DA1 /* PBXContainerItemProxy */;
+		};
+		0F17EF032A65E19D00F29DA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F17EEF22A65E19A00F29DA1 /* TaghvimWidgetExtension */;
+			targetProxy = 0F17EF022A65E19D00F29DA1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +532,7 @@
 		0F17EEE42A65E17100F29DA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +555,7 @@
 		0F17EEE52A65E17100F29DA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +659,48 @@
 			};
 			name = Release;
 		};
+		0F17EF062A65E19D00F29DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 923H768GFC;
+				INFOPLIST_FILE = TaghvimWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softworks.Taghvim.TaghvimWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F17EF072A65E19D00F29DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 923H768GFC;
+				INFOPLIST_FILE = TaghvimWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softworks.Taghvim.TaghvimWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +736,15 @@
 			buildConfigurations = (
 				0F17EEEA2A65E17100F29DA1 /* Debug */,
 				0F17EEEB2A65E17100F29DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F17EF052A65E19D00F29DA1 /* Build configuration list for PBXNativeTarget "TaghvimWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F17EF062A65E19D00F29DA1 /* Debug */,
+				0F17EF072A65E19D00F29DA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
